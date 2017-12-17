@@ -59,6 +59,8 @@ public class PlayerServices {
         List<Frame> currentFrames = tmpPlayer.getFrames();
         if(currentFrames == null)
             currentFrames = new ArrayList<>();
+
+
         if(currentFrames.size() > 10)
             throw new IllegalArgumentException("Maximal number of frames is 10 plus Bonus Frame for a Strike of Spare in Last Frame");
         if(currentFrames.size() == 9 && frame.getFirstThrow().equals(10)) {
@@ -87,6 +89,30 @@ public class PlayerServices {
         Integer score = 0;
         try {
             for (Integer i = 0; i < currentFrames.size(); i++){
+                // Check if some previous frame don't have calculated score (strike or spare)
+                for (Integer j = 0; j < i; j++) {
+                    // If score didn't calculated
+                    if(currentFrames.get(j).getFrameScore() == null) {
+                        // if it was strike
+                        if (currentFrames.get(j).getFirstThrow().equals(10)) {
+                            if (j+2 <= i) {
+                                if (currentFrames.get(j+1).getFrameScore() != null)
+                                    currentFrames.get(j).setFrameScore(currentFrames.get(j).getFirstThrow() + currentFrames.get(j+1).getFrameScore());
+                                if (currentFrames.get(j+2).getFrameScore() != null)
+                                    currentFrames.get(j).setFrameScore(currentFrames.get(j).getFirstThrow() + currentFrames.get(j+2).getFrameScore());
+                            }
+                        } else {
+                            Integer tmpScore = currentFrames.get(j).getFirstThrow() + currentFrames.get(j).getSecondThrow();
+                            // If it was spare
+                            if (tmpScore.equals(10)) {
+                                if (j + 1 <= i) {
+                                    if (currentFrames.get(j + 1).getFrameScore() != null)
+                                        currentFrames.get(j).setFrameScore(currentFrames.get(j).getFirstThrow() + currentFrames.get(j + 1).getFrameScore());
+                                }
+                            }
+                        }
+                    }
+                }
 
                 if (i == 10) {
                     score += currentFrames.get(i).getFirstThrow();
@@ -106,7 +132,7 @@ public class PlayerServices {
                         score += currentFrames.get(i+2).getFirstThrow();
                         score += currentFrames.get(i+2).getSecondThrow();
                     }else
-                        return score;
+                        continue;
                 }
 //                else
 //                    score += frames.get(i).getFirstThrow();
@@ -122,11 +148,15 @@ public class PlayerServices {
                         score += currentFrames.get(i+1).getFirstThrow();
                         score += currentFrames.get(i+1).getSecondThrow();
                     }else
-                        return score;
+                        continue;
                 }
                 // Regular
                 score += frameScore;
+                currentFrames.get(i).setFrameScore(frameScore);
+                currentFrames.get(i).setCurrentPlayerScore(score);
+//                frameServices.save(currentFrames.get(i));
                 LOG.info("Frame: " + i+1 + " result is " + score + " pins down!");
+                player.setFrames(currentFrames);
                 player.setScore(score);
                 save(player);
             }

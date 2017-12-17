@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="60412432-a8c4-42dd-835b-4dd904ec0a39" name="Default" comment="Bowling game" />
+    <list default="true" id="60412432-a8c4-42dd-835b-4dd904ec0a39" name="Default" comment="Bowling game">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/netgloo/models/Frame.class" afterPath="$PROJECT_DIR$/target/classes/netgloo/models/Frame.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/netgloo/services/PlayerServices.class" afterPath="$PROJECT_DIR$/target/classes/netgloo/services/PlayerServices.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/netgloo/models/Frame.java" afterPath="$PROJECT_DIR$/src/main/java/netgloo/models/Frame.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/netgloo/services/PlayerServices.java" afterPath="$PROJECT_DIR$/src/main/java/netgloo/services/PlayerServices.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/simulation.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/simulation.jsp" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,8 +22,8 @@
       <file leaf-file-name="GameServices.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/netgloo/services/GameServices.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+            <state relative-caret-position="743">
+              <caret line="116" column="43" lean-forward="false" selection-start-line="116" selection-start-column="35" selection-end-line="116" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -25,8 +32,8 @@
       <file leaf-file-name="PlayerServices.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/netgloo/services/PlayerServices.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+            <state relative-caret-position="244">
+              <caret line="157" column="59" lean-forward="false" selection-start-line="157" selection-start-column="59" selection-end-line="157" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -34,23 +41,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SimulationController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SimulationController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/netgloo/controllers/SimulationController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
-              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="simulation.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="simulation.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/simulation.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="188" column="67" lean-forward="false" selection-start-line="188" selection-start-column="67" selection-end-line="188" selection-end-column="67" />
+            <state relative-caret-position="364">
+              <caret line="201" column="87" lean-forward="true" selection-start-line="201" selection-start-column="87" selection-end-line="201" selection-end-column="87" />
               <folding>
-                <marker date="1513524843420" expanded="false" signature="3304:3400" ph="..." />
+                <marker date="1513548678341" expanded="false" signature="3304:3400" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Frame.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/netgloo/models/Frame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="123">
+              <caret line="26" column="30" lean-forward="false" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="30" />
+              <folding>
+                <element signature="e#1198#1199#0" expanded="true" />
+                <element signature="e#1231#1232#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -89,7 +109,12 @@
     <findStrings>
       <find>Welcome to</find>
       <find>defaults</find>
+      <find>.getScore()</find>
+      <find>addFrame</find>
     </findStrings>
+    <replaceStrings>
+      <replace>.getFrameScore()</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -112,22 +137,22 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/netgloo/models/Frame.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/netgloo/Application.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/netgloo/repository/GameRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/netgloo/repository/PlayerRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/netgloo/models/Game.java" />
-        <option value="$PROJECT_DIR$/src/main/java/netgloo/services/GameServices.java" />
         <option value="$PROJECT_DIR$/src/main/java/netgloo/controllers/IndexController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/css/style.css" />
         <option value="$PROJECT_DIR$/src/main/java/netgloo/controllers/SimulationController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/simulation.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/netgloo/repository/FrameRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/netgloo/services/FrameServices.java" />
         <option value="$PROJECT_DIR$/src/main/java/netgloo/models/Player.java" />
+        <option value="$PROJECT_DIR$/src/main/java/netgloo/services/GameServices.java" />
+        <option value="$PROJECT_DIR$/src/main/java/netgloo/models/Frame.java" />
         <option value="$PROJECT_DIR$/src/main/java/netgloo/services/PlayerServices.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/simulation.jsp" />
       </list>
     </option>
   </component>
@@ -483,12 +508,12 @@
       <option name="presentableId" value="Default" />
       <updated>1513451577134</updated>
       <workItem from="1513451578485" duration="16817000" />
-      <workItem from="1513517181426" duration="7401000" />
+      <workItem from="1513517181426" duration="12143000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24218000" />
+    <option name="totallyTimeSpent" value="28960000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -506,14 +531,14 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3635294" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3635294" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28588235" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28588235" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -546,18 +571,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/netgloo/services/GameServices.java</url>
-          <line>122</line>
-          <properties />
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/netgloo/services/GameServices.java</url>
-          <line>120</line>
-          <properties />
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/netgloo/controllers/SimulationController.java</url>
           <line>26</line>
           <properties />
@@ -565,12 +578,30 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/netgloo/services/PlayerServices.java</url>
-          <line>80</line>
+          <line>116</line>
           <properties />
-          <option name="timeStamp" value="24" />
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/netgloo/services/PlayerServices.java</url>
+          <line>122</line>
+          <properties />
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/netgloo/services/PlayerServices.java</url>
+          <line>94</line>
+          <properties />
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/netgloo/services/PlayerServices.java</url>
+          <line>156</line>
+          <properties />
+          <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="26" />
+      <option name="time" value="32" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -632,7 +663,7 @@
         <state relative-caret-position="1683">
           <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
           <folding>
-            <marker date="1513524843420" expanded="false" signature="3304:3400" ph="..." />
+            <marker date="1513548678341" expanded="false" signature="3304:3400" ph="..." />
           </folding>
         </state>
       </provider>
@@ -875,16 +906,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/simulation.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="188" column="67" lean-forward="false" selection-start-line="188" selection-start-column="67" selection-end-line="188" selection-end-column="67" />
-          <folding>
-            <marker date="1513524843420" expanded="false" signature="3304:3400" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/netgloo/repository/FrameRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -893,22 +914,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/netgloo/models/Frame.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/netgloo/controllers/SimulationController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="31" column="46" lean-forward="false" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
-          <folding>
-            <element signature="e#564#565#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="289">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/netgloo/services/FrameServices.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
+        <state relative-caret-position="238">
           <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -923,29 +942,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/netgloo/services/GameServices.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="743">
+          <caret line="116" column="43" lean-forward="false" selection-start-line="116" selection-start-column="35" selection-end-line="116" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/netgloo/services/PlayerServices.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+        <state relative-caret-position="244">
+          <caret line="157" column="59" lean-forward="false" selection-start-line="157" selection-start-column="59" selection-end-line="157" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/netgloo/services/GameServices.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/netgloo/models/Frame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="123">
+          <caret line="26" column="30" lean-forward="false" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="30" />
+          <folding>
+            <element signature="e#1198#1199#0" expanded="true" />
+            <element signature="e#1231#1232#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/netgloo/controllers/SimulationController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/simulation.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="364">
+          <caret line="201" column="87" lean-forward="true" selection-start-line="201" selection-start-column="87" selection-end-line="201" selection-end-column="87" />
+          <folding>
+            <marker date="1513548678341" expanded="false" signature="3304:3400" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

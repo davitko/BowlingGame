@@ -23,6 +23,8 @@ public class Frame implements Serializable{
 	Integer ordinalNumber;
 	Integer firstThrow;
 	Integer secondThrow;
+	Integer frameScore;
+	Integer currentPlayerScore;
 
 	public Frame() {
 		super();
@@ -64,4 +66,20 @@ public class Frame implements Serializable{
 	public void setSecondThrow(Integer secondThrow) {
 		this.secondThrow = secondThrow;
 	}
+
+    public Integer getFrameScore() {
+        return frameScore;
+    }
+
+    public void setFrameScore(Integer frameScore) {
+        this.frameScore = frameScore;
+    }
+
+    public Integer getCurrentPlayerScore() {
+        return currentPlayerScore;
+    }
+
+    public void setCurrentPlayerScore(Integer currentPlayerScore) {
+        this.currentPlayerScore = currentPlayerScore;
+    }
 }

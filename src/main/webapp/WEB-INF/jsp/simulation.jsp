@@ -184,24 +184,25 @@
 							<%--</tr>--%>
 						<%--</tfoot>--%>
 						<tbody>
-							<%--<c:forEach items="${players}" var="player">--%>
-                                <%--<tr>--%>
-                                        <c:forEach items="${frames0}" var="frame">
-                                            <%--<td>--%>
+							<c:forEach items="${players}" var="player">
+                                <tr>
+                                        <td>${player.name}:</td>
+                                        <c:forEach items="${player.frames}" var="frame">
+                                            <td>
                                                 <div class="col-lg-1 frame">
                                                     <div class="col-lg-12 upper-part">
                                                         <div class="col-lg-6 left-upper">
-                                                            1
+                                                                ${frame.firstThrow}
                                                         </div>
                                                         <div class="col-lg-6 right-upper">
-                                                            4
+                                                                ${frame.secondThrow}
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-12 down-part">
-                                                        5
+                                                            ${frame.currentPlayerScore}
                                                     </div>
                                                 </div>
-                                            <%--</td>--%>
+                                            </td>
                                         </c:forEach>
 
                                         <%--<td>${city.country}</td>--%>
@@ -219,8 +220,8 @@
                                                     <%--<i class="fa fa-trash-o"></i>--%>
                                                 <%--</button></a></td>--%>
 
-                                <%--</tr>--%>
-							<%--</c:forEach>--%>
+                                </tr>
+							</c:forEach>
 						</tbody>
 					</table>
 				</div>
