@@ -220,41 +220,18 @@ body {
 	overflow: scroll;
 	overflow-x: hidden;
 }
-
-.table-row {
-	/* 	max-width: 100%; */
-	
-}
-
 .validation-messaage {
 	padding-left: 10px;
     margin: 5px 0;
     font-size: 15px;
     font-weight: 600;
 }
-
-.submit-add {
-	/* 	background-color: #393939; */
-	/* 	color: #FF5A09; */
-	background-color: #B6B6B6;
-	color: #004687;
-	-moz-box-shadow: inset 0 0 10px #004687;
-	-webkit-box-shadow: inset 0 0 10px #004687;
-	box-shadow: inset 0 0 10px #004687;
-	text-transform: uppercase;
-}
-
 .add-index {
 	font-size: 55px;
 }
-
-
 .addCityStyle {
 	color: #004687;
 }
-
-
-
 footer {
 	position: fixed;
 	right: 10px;

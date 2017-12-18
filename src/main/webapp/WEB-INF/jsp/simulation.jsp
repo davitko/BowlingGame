@@ -78,17 +78,6 @@
 		</div>
 	</div>
 	</header>
-
-	<%--<div class="weather-background animated fadeIn">--%>
-		<%--&lt;%&ndash;          <c:out value="${weatherBg.display}"&ndash;%&gt;--%>
-		<%--&lt;%&ndash;          <c:out value="${'weather-background-hide'}"/> &ndash;%&gt;--%>
-		<%--&lt;%&ndash;          <%= request.getParameter("weather-background-hide") %> &ndash;%&gt;--%>
-
-		<%--<div class="fill <c:out value="${weatherBg.display}" />"--%>
-			<%--style="background-image:url('${contextPath}/resources/img/weather/<c:out value="${weatherBg.url}" />');"></div>--%>
-
-	<%--</div>--%>
-
 	<div class="title animated bounceIn">
 		<div class="row ">
 			<div
@@ -103,46 +92,6 @@
 		<div class="addCity animated bounceIn">
 			<div class="row">
 				<div class="col-lg-12 col-md-12 ">
-					<%--<c:url var="addAction" value="/addCity/add"></c:url>--%>
-					<%--&lt;%&ndash; <form:form action="${addAction}" commandName="warehouse" method="POST"> &ndash;%&gt;--%>
-					<%--<!-- 					<form role="form" -->--%>
-					<%--&lt;%&ndash; 						action="${addAction}?${_csrf.parameterName}=${_csrf.token}" &ndash;%&gt;--%>
-					<%--<!-- 						commandName="city" method="POST"> -->--%>
-					<%--&lt;%&ndash; 						<form role="form" action="${addAction}"commandName="city" method="POST"> &ndash;%&gt;--%>
-					<%--<form role="form" action="${addAction}" commandName="city"--%>
-						<%--method="POST">--%>
-						<%--<div class="row">--%>
-							<%--<div--%>
-								<%--class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-3 col-sm-5 col-sm-offset-2 col-xs-6">--%>
-								<%--<div class="form-group">--%>
-									<%--<input class="form-control addCityStyle" name="name"--%>
-										<%--id="message" placeholder="City Name" type="text" />--%>
-									<%--<p class="text-danger validation-messaage">--%>
-										<%--<c:out value="${validationCity.validationMessage}" />--%>
-									<%--</p>--%>
-								<%--</div>--%>
-							<%--</div>--%>
-							<%--<div--%>
-								<%--class="col-lg-3 col-lg-offset-1 col-md-4 col-md-offset-1 col-sm-5 col-xs-6 recommended-cities <c:if test="${validationCity.recommendedCities eq null}">hide</c:if> />">--%>
-								<%--<h4>Maybe you mean:</h4>--%>
-								<%--<c:forEach items="${validationCity.recommendedCities}"--%>
-									<%--var="recommendCity">--%>
-									<%--<a--%>
-										<%--href="<c:url value="/addRecommendedCity/${recommendCity}" />">--%>
-										<%--<div>${recommendCity}</div>--%>
-									<%--</a>--%>
-								<%--</c:forEach>--%>
-
-							<%--</div>--%>
-
-							<%--<div class="clearfix"></div>--%>
-							<%--<div class="col-lg-12 text-center">--%>
-								<%--<div id="success"></div>--%>
-								<%--<input type="submit"--%>
-									<%--class="btn btn-xl submit-add addWarehouseStyle" value="add" />--%>
-							<%--</div>--%>
-						<%--</div>--%>
-					<%--</form>--%>
 				</div>
 			</div>
 
@@ -205,7 +154,6 @@
                                             </td>
                                         </c:forEach>
                                         <td>
-                                            <%--<div class="frame">--%>
                                         <div class="col-lg-12 upper-part">
                                             <div class="col-lg-6 left-upper">
                                                     ${player.extraFrame.firstThrow}
@@ -217,24 +165,7 @@
                                         <div class="col-lg-12 down-part">
                                                 ${player.extraFrame.currentPlayerScore}
                                         </div>
-                                            <%--</div>--%>
                                     </td>
-
-                                        <%--<td>${city.country}</td>--%>
-                                        <%--<td>${city.temperature}&#8451;</td>--%>
-                                        <%--<td>${city.humidity}%</td>--%>
-                                        <%--<td>${city.pressure}mb</td>--%>
-                                        <%--<td><a href="<c:url value="/details/${city.id}" />"><button--%>
-                                                    <%--type="button" class="btn btn-success" aria-haspopup="true"--%>
-                                                    <%--aria-expanded="false">--%>
-                                                    <%--<i class="fa fa-info"></i>--%>
-                                                <%--</button></a></td>--%>
-                                        <%--<td><a href="<c:url value="/softRemove/${city.id}" />"><button--%>
-                                                    <%--type="button" class="btn btn-danger " aria-haspopup="true"--%>
-                                                    <%--aria-expanded="false">--%>
-                                                    <%--<i class="fa fa-trash-o"></i>--%>
-                                                <%--</button></a></td>--%>
-
                                 </tr>
 							</c:forEach>
 						</tbody>
@@ -242,22 +173,15 @@
 				</div>
 			</div>
 		</div>
-
 		<hr>
-
-        <%--<a href="<%=request.getContextPath()%>/simulation/"/>--%>
-        <%--<button type="button" class="btn btn-default btn-xl submit-add  add-index" aria-haspopup="true" aria-expanded="false">--%>
-            <%--<i class="fa fa-plus-square" aria-hidden="true"></i> Restart Game Simulation</button></a>--%>
 	</div>
 	<!-- /.container -->
-
-
 
 	<!-- Footer -->
 	<footer>
 	<div class="row">
 		<div class="col-lg-12">
-			<p>Copyright &copy; Milos Davitkovic 2016</p>
+			<p>Copyright &copy; Milos Davitkovic 2017</p>
 		</div>
 	</div>
 	<!-- /.row --> </footer>
@@ -287,10 +211,6 @@
 			$('[data-toggle="popover"]').popover();
 		});
 	</script>
-
-
-
-
 
 </body>
 </html>

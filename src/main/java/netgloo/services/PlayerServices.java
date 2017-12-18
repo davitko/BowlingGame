@@ -119,31 +119,6 @@ public class PlayerServices {
         Integer score = 0;
         try {
             for (Integer i = 0; i < currentFrames.size(); i++){
-                // Check if some previous frame don't have calculated score (strike or spare)
-//                for (Integer j = 0; j < i; j++) {
-//                    // If score didn't calculated
-//                    if(currentFrames.get(j).getFrameScore() == null) {
-//                        // if it was strike
-//                        if (currentFrames.get(j).getFirstThrow().equals(10)) {
-//                            if (j+2 <= i) {
-//                                if (currentFrames.get(j+1).getFrameScore() != null)
-//                                    currentFrames.get(j).setFrameScore(currentFrames.get(j).getFirstThrow() + currentFrames.get(j+1).getFrameScore());
-//                                if (currentFrames.get(j+2).getFrameScore() != null)
-//                                    currentFrames.get(j).setFrameScore(currentFrames.get(j).getFirstThrow() + currentFrames.get(j+2).getFrameScore());
-//                            }
-//                        } else {
-//                            Integer tmpScore = currentFrames.get(j).getFirstThrow() + currentFrames.get(j).getSecondThrow();
-//                            // If it was spare
-//                            if (tmpScore.equals(10)) {
-//                                if (j + 1 <= i) {
-//                                    if (currentFrames.get(j + 1).getFrameScore() != null)
-//                                        currentFrames.get(j).setFrameScore(currentFrames.get(j).getFirstThrow() + currentFrames.get(j + 1).getFrameScore());
-//                                }
-//                            }
-//                        }
-//                    }
-//                }
-
                 Integer frameScore = currentFrames.get(i).getFirstThrow();
                 // *** Strike ***
                 if (currentFrames.get(i).getFirstThrow().equals(10)) {
@@ -151,9 +126,6 @@ public class PlayerServices {
                     // Last Frame
                     try {
                         if (i == 9) {
-    //                        score += currentFrames.get(i).getFirstThrow();
-    //                        score += currentFrames.get(i).getSecondThrow();
-
                             frameScore += player.getExtraFrame().getFirstThrow();
                             frameScore += player.getExtraFrame().getSecondThrow();
 
@@ -169,9 +141,6 @@ public class PlayerServices {
                         }
                         // Before Last Frame
                         if (i == 8) {
-    //                        score += currentFrames.get(i).getFirstThrow();
-    //                        score += currentFrames.get(i).getSecondThrow();
-
                             frameScore += currentFrames.get(i+1).getFirstThrow();
                             frameScore += currentFrames.get(i+1).getSecondThrow();
 
@@ -190,9 +159,6 @@ public class PlayerServices {
                         }
                         // Not Last Frame
                         if(i+2 < currentFrames.size()) {
-    //                        score += currentFrames.get(i).getFirstThrow();
-    //                        score += currentFrames.get(i).getSecondThrow();
-
                             frameScore += currentFrames.get(i+1).getFirstThrow();
                             frameScore += currentFrames.get(i+1).getSecondThrow();
 
@@ -202,11 +168,7 @@ public class PlayerServices {
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
-//                    else
-//                        continue;
                 }
-//                else
-//                    score += frames.get(i).getFirstThrow();
 
                 // After 1st throw is not null
                 if(!frameScore.equals(10)) {
@@ -217,9 +179,6 @@ public class PlayerServices {
                         // Last Frame
                         try {
                             if (i == 9) {
-    //                        score += currentFrames.get(i).getFirstThrow();
-    //                        score += currentFrames.get(i).getSecondThrow();
-
                                 frameScore += player.getExtraFrame().getFirstThrow();
 
                                 Frame extraFrame = player.getExtraFrame();
@@ -234,17 +193,12 @@ public class PlayerServices {
                             }
                             // Not Last Frame
                             if (i + 1 < currentFrames.size()) {
-    //                        score += currentFrames.get(i).getFirstThrow();
-    //                        score += currentFrames.get(i).getSecondThrow();
-
                                 frameScore += currentFrames.get(i + 1).getFirstThrow();
                                 frameScore += currentFrames.get(i + 1).getSecondThrow();
                             }
                         } catch (Exception e) {
                             e.printStackTrace();
                         }
-//                        else
-//                            continue;
                     }
                 }
 
@@ -252,7 +206,6 @@ public class PlayerServices {
                 score += frameScore;
                 currentFrames.get(i).setFrameScore(frameScore);
                 currentFrames.get(i).setCurrentPlayerScore(score);
-//                frameServices.save(currentFrames.get(i));
                 LOG.info("Frame: " + i + " result is " + frameScore + " pins down!");
                 LOG.info("Frame: " + i + " total score is " + score);
                 player.setFrames(currentFrames);

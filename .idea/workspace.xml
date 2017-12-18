@@ -2,64 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60412432-a8c4-42dd-835b-4dd904ec0a39" name="Default" comment="Bowling game">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/netgloo/Validation/CityValidator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/netgloo/Validation/ValidationCity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/netgloo/controllers/MainController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/netgloo/models/CarouselPack.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/netgloo/models/City.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/netgloo/models/CityTimes.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/netgloo/models/WeatherBackground.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/netgloo/models/WeatherBgImgUrl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/netgloo/models/package-info.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/netgloo/models/parsing/Clouds.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/netgloo/models/parsing/Coord.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/netgloo/models/parsing/Main.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/netgloo/models/parsing/OpenWeatherMapObject.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/netgloo/models/parsing/Rain.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/netgloo/models/parsing/Sys.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/netgloo/models/parsing/Weather.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/netgloo/models/parsing/Wind.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/netgloo/repository/CityRepository.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/netgloo/repository/package-info.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/netgloo/services/CityServices.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/netgloo/services/FillApp.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/netgloo/services/package-info.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/netgloo/Validation/CityValidator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/netgloo/Validation/ValidationCity.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/netgloo/controllers/MainController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/netgloo/models/CarouselPack.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/netgloo/models/City.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/netgloo/models/CityTimes.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/netgloo/models/WeatherBackground.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/netgloo/models/WeatherBgImgUrl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/netgloo/models/parsing/Clouds.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/netgloo/models/parsing/Coord.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/netgloo/models/parsing/Main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/netgloo/models/parsing/OpenWeatherMapObject.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/netgloo/models/parsing/Rain.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/netgloo/models/parsing/Sys.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/netgloo/models/parsing/Weather.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/netgloo/models/parsing/Wind.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/netgloo/repository/CityRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/netgloo/services/CityServices.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/netgloo/services/FillApp.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/netgloo/Application.class" afterPath="$PROJECT_DIR$/target/classes/netgloo/Application.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/netgloo/controllers/IndexController.class" afterPath="$PROJECT_DIR$/target/classes/netgloo/controllers/IndexController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/netgloo/controllers/SimulationController.class" afterPath="$PROJECT_DIR$/target/classes/netgloo/controllers/SimulationController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/netgloo/services/FrameServices.class" afterPath="$PROJECT_DIR$/target/classes/netgloo/services/FrameServices.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/netgloo/services/GameServices.class" afterPath="$PROJECT_DIR$/target/classes/netgloo/services/GameServices.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/addCity.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/details.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/registration.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/welcome.jsp" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/netgloo/services/PlayerServices.class" afterPath="$PROJECT_DIR$/target/classes/netgloo/services/PlayerServices.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/netgloo/Application.java" afterPath="$PROJECT_DIR$/src/main/java/netgloo/Application.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/netgloo/controllers/IndexController.java" afterPath="$PROJECT_DIR$/src/main/java/netgloo/controllers/IndexController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/netgloo/controllers/SimulationController.java" afterPath="$PROJECT_DIR$/src/main/java/netgloo/controllers/SimulationController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/netgloo/models/Frame.java" afterPath="$PROJECT_DIR$/src/main/java/netgloo/models/Frame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/netgloo/models/Player.java" afterPath="$PROJECT_DIR$/src/main/java/netgloo/models/Player.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/netgloo/services/FrameServices.java" afterPath="$PROJECT_DIR$/src/main/java/netgloo/services/FrameServices.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/netgloo/services/GameServices.java" afterPath="$PROJECT_DIR$/src/main/java/netgloo/services/GameServices.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/netgloo/services/PlayerServices.java" afterPath="$PROJECT_DIR$/src/main/java/netgloo/services/PlayerServices.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/simulation.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/simulation.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/simulation.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/simulation.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/style.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/style.css" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -72,69 +26,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GameServices.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GameServices.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/netgloo/services/GameServices.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-586">
-              <caret line="79" column="42" lean-forward="false" selection-start-line="79" selection-start-column="42" selection-end-line="79" selection-end-column="42" />
+            <state relative-caret-position="1870">
+              <caret line="122" column="53" lean-forward="false" selection-start-line="122" selection-start-column="53" selection-end-line="122" selection-end-column="53" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PlayerServices.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/netgloo/services/PlayerServices.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="187" column="41" lean-forward="false" selection-start-line="187" selection-start-column="41" selection-end-line="187" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SimulationController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/netgloo/controllers/SimulationController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IndexController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/netgloo/controllers/IndexController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding>
-                <element signature="e#528#529#0" expanded="true" />
-                <element signature="e#549#550#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="simulation.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/simulation.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="simulation.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/simulation.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="192" column="61" lean-forward="false" selection-start-line="192" selection-start-column="61" selection-end-line="192" selection-end-column="71" />
-              <folding>
-                <marker date="1513568176081" expanded="false" signature="3375:3471" ph="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -155,6 +52,7 @@
       <find>defaults</find>
       <find>.getScore()</find>
       <find>addFrame</find>
+      <find>.submit-add</find>
     </findStrings>
     <replaceStrings>
       <replace>.getFrameScore()</replace>
@@ -181,13 +79,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/netgloo/repository/GameRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/netgloo/repository/PlayerRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/netgloo/models/Game.java" />
         <option value="$PROJECT_DIR$/src/main/java/netgloo/repository/FrameRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/css/style.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/netgloo/controllers/IndexController.java" />
         <option value="$PROJECT_DIR$/src/main/java/netgloo/Application.java" />
         <option value="$PROJECT_DIR$/src/main/java/netgloo/services/FrameServices.java" />
@@ -195,9 +90,12 @@
         <option value="$PROJECT_DIR$/src/main/java/netgloo/models/Player.java" />
         <option value="$PROJECT_DIR$/src/main/java/netgloo/services/GameServices.java" />
         <option value="$PROJECT_DIR$/src/main/java/netgloo/models/Frame.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/simulation.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/css/simulation.css" />
         <option value="$PROJECT_DIR$/src/main/java/netgloo/services/PlayerServices.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/css/simulation.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/css/style.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/simulation.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
       </list>
     </option>
   </component>
@@ -368,6 +266,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-mysql-springdatajpa-hibernate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BowlingGame" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-boot-mysql-springdatajpa-hibernate" type="b2602c69:ProjectViewProjectNode" />
@@ -554,12 +461,12 @@
       <option name="presentableId" value="Default" />
       <updated>1513451577134</updated>
       <workItem from="1513451578485" duration="16817000" />
-      <workItem from="1513517181426" duration="20079000" />
+      <workItem from="1513517181426" duration="21411000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36896000" />
+    <option name="totallyTimeSpent" value="38228000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -676,9 +583,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1683">
           <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
-          <folding>
-            <marker date="1513568176081" expanded="false" signature="3375:3471" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -855,14 +760,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="61" column="42" lean-forward="false" selection-start-line="61" selection-start-column="29" selection-end-line="61" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/netgloo/models/Game.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="65">
@@ -883,22 +780,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="26" column="23" lean-forward="true" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="103" column="36" lean-forward="false" selection-start-line="103" selection-start-column="36" selection-end-line="105" selection-end-column="95" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="254" column="0" lean-forward="false" selection-start-line="254" selection-start-column="0" selection-end-line="254" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -929,29 +810,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/netgloo/controllers/IndexController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="e#528#529#0" expanded="true" />
-            <element signature="e#549#550#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/netgloo/services/FrameServices.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="461">
           <caret line="35" column="22" lean-forward="true" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/netgloo/services/GameServices.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-586">
-          <caret line="79" column="42" lean-forward="false" selection-start-line="79" selection-start-column="42" selection-end-line="79" selection-end-column="42" />
           <folding />
         </state>
       </provider>
@@ -979,39 +841,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/netgloo/controllers/SimulationController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/netgloo/controllers/IndexController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/simulation.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="192" column="61" lean-forward="false" selection-start-line="192" selection-start-column="61" selection-end-line="192" selection-end-column="71" />
+        <state relative-caret-position="68">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
-            <marker date="1513568176081" expanded="false" signature="3375:3471" ph="..." />
+            <element signature="e#528#529#0" expanded="true" />
+            <element signature="e#549#550#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/simulation.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+        <state relative-caret-position="170">
+          <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1802">
+          <caret line="106" column="30" lean-forward="false" selection-start-line="106" selection-start-column="30" selection-end-line="106" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="221" column="1" lean-forward="false" selection-start-line="221" selection-start-column="1" selection-end-line="221" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/netgloo/controllers/SimulationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="20" column="30" lean-forward="true" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/simulation.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3621">
+          <caret line="213" column="0" lean-forward="true" selection-start-line="213" selection-start-column="0" selection-end-line="213" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/netgloo/services/PlayerServices.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="187" column="41" lean-forward="false" selection-start-line="187" selection-start-column="41" selection-end-line="187" selection-end-column="41" />
+        <state relative-caret-position="175">
+          <caret line="207" column="66" lean-forward="false" selection-start-line="207" selection-start-column="66" selection-end-line="207" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-41">
+          <caret line="45" column="33" lean-forward="false" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/netgloo/services/GameServices.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1870">
+          <caret line="122" column="53" lean-forward="false" selection-start-line="122" selection-start-column="53" selection-end-line="122" selection-end-column="53" />
+          <folding />
         </state>
       </provider>
     </entry>

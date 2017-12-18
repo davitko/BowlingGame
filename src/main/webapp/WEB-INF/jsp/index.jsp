@@ -40,15 +40,17 @@
 <!-- Custom CSS -->
 <link href="${contextPath}/resources/css/full-slider.css"
 	rel="stylesheet">
-<link href="${contextPath}/resources/css/style.css" rel="stylesheet">
 
 <!--    Animate.css-->
 <link href="${contextPath}/resources/css/animate.css" rel="stylesheet">
 <!-- Font Awesome -->
 <link href="<%=request.getContextPath()%>/resources/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
+	<link href="${contextPath}/resources/css/style.css" rel="stylesheet">
+    <link href="${contextPath}/resources/css/simulation.css" rel="stylesheet">
 
-<title>Insert title here</title>
+
+<title>Bowling game</title>
 </head>
 <body>
 
@@ -84,7 +86,7 @@
 
 	<div class="title-index animated bounceIn">
 		<div class="row ">
-			<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+			<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 title-index-text">
 				<h1>Welcome to Bowling game</h1>
 			</div>
 		</div>
@@ -95,26 +97,17 @@
 		<div class="addCity animated bounceIn">
 			<div class="row">
 				<div class="col-lg-12 col-md-12 ">
-							<div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-sm-12">
+							<div class="col-lg-4 col-lg-offset-2 col-md-6 col-md-offset-2 col-sm-12">
 							<div class="clearfix"></div>
 							<div class="col-lg-12 text-center">
-<!-- 								<div id="success"></div> -->
-<%-- 								<a href="<%=request.getContextPath()%>/addCity" />"><input type="button" --%>
-<!-- 									class="btn btn-xl submit-add  add-index" value="Add City" /></a> -->
 									<a href="<%=request.getContextPath()%>/simulation/"/>
     <button type="button" class="btn btn-default btn-xl submit-add  add-index" aria-haspopup="true" aria-expanded="false">
 		<i class="fa fa-plus-square" aria-hidden="true"></i> Start Game Simulation</button></a>
 							</div>
 						</div>
-					
-
 				</div>
 			</div>
-
-
 		</div>
-		
-
 	</div>
 	<!-- /.container -->
 
@@ -122,7 +115,7 @@
 	<footer>
 	<div class="row">
 		<div class="col-lg-12">
-			<p>Copyright &copy; Milos Davitkovic 2016</p>
+			<p>Copyright &copy; Milos Davitkovic 2017</p>
 		</div>
 	</div>
 	<!-- /.row --> </footer>
@@ -148,12 +141,6 @@
 			interval : 10000
 		//changes the speed
 		})
-		
 	</script>
-
-
-
-
-
 </body>
 </html>
