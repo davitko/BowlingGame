@@ -1,0 +1,15 @@
+
+#upper-part,
+.upper-part {
+    padding: 0 !important;
+}
+
+.down-part {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.right-upper {
+    border: 2px solid black;
+}

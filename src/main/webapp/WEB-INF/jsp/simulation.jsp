@@ -48,9 +48,9 @@
 <link
 	href="<%=request.getContextPath()%>/resources/fonts/font-awesome/css/font-awesome.min.css"
 	rel="stylesheet">
+    <link href="${contextPath}/resources/css/simulation.css" rel="stylesheet">
 
-
-<title>Insert title here</title>
+<title>Simulation</title>
 </head>
 <body>
 
@@ -189,8 +189,8 @@
                                         <td>${player.name}:</td>
                                         <c:forEach items="${player.frames}" var="frame">
                                             <td>
-                                                <div class="col-lg-1 frame">
-                                                    <div class="col-lg-12 upper-part">
+                                                <%--<div class="frame">--%>
+                                                    <div id="upper-part" class="col-lg-12 upper-part">
                                                         <div class="col-lg-6 left-upper">
                                                                 ${frame.firstThrow}
                                                         </div>
@@ -201,9 +201,24 @@
                                                     <div class="col-lg-12 down-part">
                                                             ${frame.currentPlayerScore}
                                                     </div>
-                                                </div>
+                                                <%--</div>--%>
                                             </td>
                                         </c:forEach>
+                                        <td>
+                                            <%--<div class="frame">--%>
+                                        <div class="col-lg-12 upper-part">
+                                            <div class="col-lg-6 left-upper">
+                                                    ${player.extraFrame.firstThrow}
+                                            </div>
+                                            <div class="col-lg-6 right-upper">
+                                                    ${player.extraFrame.secondThrow}
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 down-part">
+                                                ${player.extraFrame.currentPlayerScore}
+                                        </div>
+                                            <%--</div>--%>
+                                    </td>
 
                                         <%--<td>${city.country}</td>--%>
                                         <%--<td>${city.temperature}&#8451;</td>--%>
@@ -230,10 +245,13 @@
 
 		<hr>
 
-
-
+        <%--<a href="<%=request.getContextPath()%>/simulation/"/>--%>
+        <%--<button type="button" class="btn btn-default btn-xl submit-add  add-index" aria-haspopup="true" aria-expanded="false">--%>
+            <%--<i class="fa fa-plus-square" aria-hidden="true"></i> Restart Game Simulation</button></a>--%>
 	</div>
 	<!-- /.container -->
+
+
 
 	<!-- Footer -->
 	<footer>

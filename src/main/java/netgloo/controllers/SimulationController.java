@@ -1,7 +1,6 @@
 package netgloo.controllers;
 
-import netgloo.com.java.Integer.IntegerFn;
-import netgloo.models.CarouselPack;
+
 import netgloo.models.Frame;
 import netgloo.models.Game;
 import netgloo.models.Player;
@@ -29,7 +28,6 @@ public class SimulationController {
             List<Frame> frames = players.get(i).getFrames();
             model.addAttribute("frames"+i.toString(), frames);
         }
-
         model.addAttribute("players", players);
 
         return "simulation";

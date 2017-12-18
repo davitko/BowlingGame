@@ -18,13 +18,14 @@ import org.apache.log4j.Logger;
 public class GameServices {
 
     private static final Logger LOG = Logger.getLogger(GameServices.class);
-
     private final DateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss.SSS");
 
     @Autowired
     GameRepository gameRepository;
     @Autowired
     PlayerServices playerServices;
+    @Autowired
+    FrameServices frameServices;
 
     public String save(Game newItem) {
         Game object = new Game();
@@ -38,91 +39,108 @@ public class GameServices {
         return "User successfully created new Game! (id = " + object.getId() + ")";
     }
 
+    public Game create() {
+        Game game = new Game();
+        game.setDateOfGame(sdf.format(new Date()));
+        List<Player> players = new ArrayList<>();
+        game.setPlayers(players);
+        gameRepository.save(game);
+        return game;
+    }
+
     public void addPlayer(Game game, Player player) {
-        Game tmpGame = gameRepository.findByDateOfGame(game.getDateOfGame());
-        List<Player> currentPlayers = tmpGame.getPlayers();
-        if(currentPlayers == null)
-            currentPlayers = new ArrayList<>();
-        if(currentPlayers.size() > 6)
-            throw new IllegalArgumentException("Maximal number of players is 6");
-        currentPlayers.add(player);
-        tmpGame.setPlayers(currentPlayers);
-        gameRepository.save(tmpGame);
+        try {
+            Game tmpGame = gameRepository.findByDateOfGame(game.getDateOfGame());
+            List<Player> currentPlayers = tmpGame.getPlayers();
+            if(currentPlayers == null)
+                currentPlayers = new ArrayList<>();
+            if(currentPlayers.size() > 6)
+                throw new IllegalArgumentException("Maximal number of players is 6");
+            currentPlayers.add(player);
+            tmpGame.setPlayers(currentPlayers);
+            gameRepository.save(tmpGame);
+        } catch (IllegalArgumentException e) {
+            e.printStackTrace();
+        }
     }
 
     public Game startSimulationOfGame() {
-        Game game = new Game();
-        game.setDateOfGame(sdf.format(new Date()));
-        gameRepository.save(game);
+        Game game = create();
+//        game.setDateOfGame(sdf.format(new Date()));
+//        gameRepository.save(game);
+        try {
+            List<Player> players = new ArrayList<>();
+            Player player1 = new Player();
+            player1.setName("Milos");
+            player1.setOrdinalNumber(1);
+            player1.setDateOfPlaying(sdf.format(new Date()));
+            players.add(player1);
+            playerServices.save(player1);
+            addPlayer(game, player1);
+            Player player2 = new Player();
+            player2.setName("Marko");
+            player2.setOrdinalNumber(2);
+            player2.setDateOfPlaying(sdf.format(new Date()));
+            players.add(player2);
+            playerServices.save(player2);
+            addPlayer(game, player2);
+            game.setPlayers(players);
 
-        List<Player> players = new ArrayList<>();
-        Player player1 = new Player();
-        player1.setName("Milos");
-        player1.setOrdinalNumber(1);
-        player1.setDateOfPlaying(sdf.format(new Date()));
-        players.add(player1);
-        playerServices.save(player1);
-        addPlayer(game, player1);
-        Player player2 = new Player();
-        player2.setName("Marko");
-        player2.setOrdinalNumber(2);
-        player2.setDateOfPlaying(sdf.format(new Date()));
-        players.add(player2);
-        playerServices.save(player2);
-        addPlayer(game, player2);
-        game.setPlayers(players);
+            Boolean endGame = false;
 
-        Boolean endGame = false;
-
-        while (!endGame) {
-            for (Player player: game.getPlayers()) {
-                for (Integer f = 1; f < 11; f++){
-                    Frame frame = new Frame();
-                    Integer numOfPins = 10;
-                    Integer frameScore = 0;
-                    // 1st throw
-                    frame.setFirstThrow(playerServices.throwBall(numOfPins));
-                    frameScore = frame.getFirstThrow();
-                    numOfPins -= frameScore;
-                    // STRIKE
-                    if (frameScore.equals(10)) {
-                        LOG.info("Player " + player.getName() + " in frame number " + f + " STRIKE!");
-                        playerServices.addFrame(player, frame);
-                        if(f.equals(10)) {
-                            Frame extraFrame = new Frame();
-                            extraFrame.setFirstThrow(playerServices.throwBall(numOfPins));
-                            LOG.info("Player " + player.getName() + " in first bonus throw ruins " + extraFrame.getFirstThrow() + " pins");
-                            extraFrame.setSecondThrow(playerServices.throwBall(numOfPins));
-                            LOG.info("Player " + player.getName() + " in second bonus throw ruins " + extraFrame.getSecondThrow() + " pins");
-                            playerServices.addFrame(player, extraFrame);
+            while (!endGame) {
+                for (Player player: game.getPlayers()) {
+                    for (Integer f = 1; f < 11; f++){
+                        Frame frame = frameServices.create();
+                        Integer numOfPins = 10;
+                        Integer frameScore = 0;
+                        // 1st throw
+                        frame.setFirstThrow(playerServices.throwBall(numOfPins));
+                        frameScore = frame.getFirstThrow();
+                        numOfPins -= frameScore;
+                        // STRIKE
+                        if (frameScore.equals(10)) {
+                            LOG.info("Player " + player.getName() + " in frame number " + f + " STRIKE!");
+                            playerServices.addFrame(player, frame);
+                            if(f.equals(10)) {
+                                Frame extraFrame = frameServices.create();
+                                extraFrame.setFirstThrow(playerServices.throwBall(numOfPins));
+                                LOG.info("Player " + player.getName() + " in first bonus throw ruins " + extraFrame.getFirstThrow() + " pins");
+                                extraFrame.setSecondThrow(playerServices.throwBall(numOfPins));
+                                LOG.info("Player " + player.getName() + " in second bonus throw ruins " + extraFrame.getSecondThrow() + " pins");
+                                playerServices.addExtraFrame(player, extraFrame);
+                            }
+                            continue;
                         }
+                        // 2nd throw
+                        frame.setSecondThrow(playerServices.throwBall(numOfPins));
+                        frameScore = frame.getFirstThrow() + frame.getSecondThrow();
+                        // SPARE
+                        if (frameScore.equals(10)) {
+                            LOG.info("Player " + player.getName() + " in frame number " + f + " SPARE!");
+                            playerServices.addFrame(player, frame);
+                            if(f.equals(10)) {
+                                Frame extraFrame = frameServices.create();
+                                extraFrame.setFirstThrow(playerServices.throwBall(numOfPins));
+                                LOG.info("Player " + player.getName() + " in bonus throw ruins " + extraFrame.getFirstThrow() + " pins");
+                                playerServices.addExtraFrame(player, extraFrame);
+                            }
+                            continue;
+                        }
+                        // Normal throw
+                        playerServices.addFrame(player, frame);
+                        LOG.info("Player " + player.getName() + " in frame number " + f + " ruin " + frameScore + " pins");
                         continue;
                     }
-                    // 2nd throw
-                    frame.setSecondThrow(playerServices.throwBall(numOfPins));
-                    frameScore = frame.getFirstThrow() + frame.getSecondThrow();
-                    // SPARE
-                    if (frameScore.equals(10)) {
-                        LOG.info("Player " + player.getName() + " in frame number " + f + " SPARE!");
-                        playerServices.addFrame(player, frame);
-                        if(f.equals(10)) {
-                            Frame extraFrame = new Frame();
-                            extraFrame.setFirstThrow(playerServices.throwBall(numOfPins));
-                            LOG.info("Player " + player.getName() + " in bonus throw ruins " + extraFrame.getFirstThrow() + " pins");
-                            playerServices.addFrame(player, extraFrame);
-                        }
-                        continue;
-                    }
-                    // Normal throw
-                    playerServices.addFrame(player, frame);
-                    LOG.info("Player " + player.getName() + " in frame number " + f + " ruin " + frameScore + " pins");
-                    continue;
+                    LOG.info("Player " + player.getName() + " total score " + playerServices.calcScore(player));
                 }
-                LOG.info("Player " + player.getName() + " total score " + playerServices.calcScore(player));
+                endGame = true;
             }
-            endGame = true;
+//            return gameRepository.findByDateOfGame(game.getDateOfGame());
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-        return gameRepository.findByDateOfGame(game.getDateOfGame());
+        return game;
     }
 
 

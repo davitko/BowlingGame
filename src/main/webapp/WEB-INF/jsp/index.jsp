@@ -104,7 +104,6 @@
 									<a href="<%=request.getContextPath()%>/simulation/"/>
     <button type="button" class="btn btn-default btn-xl submit-add  add-index" aria-haspopup="true" aria-expanded="false">
 		<i class="fa fa-plus-square" aria-hidden="true"></i> Start Game Simulation</button></a>
-
 							</div>
 						</div>
 					

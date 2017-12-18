@@ -10,7 +10,6 @@ import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-import netgloo.services.FillApp;
 
 /*
  * The @SpringBootApplication annotation is equivalent to using 
@@ -37,9 +36,6 @@ public class Application extends SpringBootServletInitializer{
 	  ConfigurableApplicationContext context = SpringApplication.run(Application.class, args);
     
     try {
-    	context.getBean(FillApp.class).fillImgUrls();
-		context.getBean(FillApp.class).fillCarouselImg();
-//		context.getBean(FillDataBase.class).fillCar();
 
 
 	}catch (Exception e) {

@@ -35,6 +35,8 @@ public class Player implements Serializable{
     @OneToMany(targetEntity=Frame.class)
     @JsonIgnore
 	List<Frame> frames;
+    @OneToOne
+    Frame extraFrame;
 	Integer score;
 
 	public Player() {
@@ -96,4 +98,12 @@ public class Player implements Serializable{
 	public void setDateOfPlaying(String dateOfPlaying) {
 		this.dateOfPlaying = dateOfPlaying;
 	}
+
+    public Frame getExtraFrame() {
+        return extraFrame;
+    }
+
+    public void setExtraFrame(Frame extraFrame) {
+        this.extraFrame = extraFrame;
+    }
 }

@@ -52,7 +52,10 @@ public class Frame implements Serializable{
 	}
 
 	public Integer getFirstThrow() {
-		return firstThrow;
+	    if(firstThrow != null)
+	        return firstThrow;
+	    else
+	        return 0;
 	}
 
 	public void setFirstThrow(Integer firstThrow) {
@@ -60,7 +63,10 @@ public class Frame implements Serializable{
 	}
 
 	public Integer getSecondThrow() {
-		return secondThrow;
+		if(secondThrow != null)
+	        return secondThrow;
+		else
+		    return 0;
 	}
 
 	public void setSecondThrow(Integer secondThrow) {
